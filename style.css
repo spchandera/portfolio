@@ -18,7 +18,7 @@
   --radius-xl: 28px;
   --radius-lg: 22px;
   --radius-md: 16px;
-  --container: min(1440px, calc(100% - 1.5rem));
+  --container: min(1540px, calc(100% - 1.5rem));
   --section-space: clamp(4.75rem, 9vw, 7.5rem);
   --transition: 220ms ease;
 }
