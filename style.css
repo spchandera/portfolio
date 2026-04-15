@@ -462,7 +462,7 @@ body[data-theme="light"] .site-nav {
 }
 
 .gradient-text {
-  background: linear-gradient(120deg, var(--accent), var(--accent-tertiary), var(--accent-secondary));
+  background: linear-gradient(120deg, #ffffff, #b6d6ff, #77bae1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
