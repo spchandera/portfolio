@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Samir Ahir is a Shopify Developer from Ahmedabad, India with 3+ years of experience building high-performing storefronts, optimizing UX, and integrating Shopify apps.">
+  <title>Samir Ahir | Shopify Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <p class="loader__text">Loading portfolio experience...</p>
+  </div>
+
+  <div class="page-bg" aria-hidden="true">
+    <span class="page-bg__orb page-bg__orb--one"></span>
+    <span class="page-bg__orb page-bg__orb--two"></span>
+    <span class="page-bg__orb page-bg__orb--three"></span>
+    <span class="page-bg__grid"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#hero" aria-label="Samir Chandera home">
+        <span class="brand__mark">SC</span>
+        <span class="brand__text">
+          <strong>Samir Chandera</strong>
+          <small>Shopify Developer</small>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color mode"
+          aria-pressed="false">
+          <span class="theme-toggle__icon theme-toggle__icon--moon"></span>
+          <span class="theme-toggle__icon theme-toggle__icon--sun"></span>
+        </button>
+
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+          aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero__layout">
+        <div class="hero__content reveal">
+          <span class="section-badge">Ahmedabad, India</span>
+          <h1>Samir Chandera</h1>
+          <p class="hero__title">
+            <span class="gradient-text">Shopify Developer</span>
+            <span class="hero__divider">|</span>
+            <span>3+ Years Experience</span>
+          </p>
+          <p class="hero__tagline">
+            Shopify Developer with 3+ years of experience building and optimizing high-performing eCommerce stores.
+            Specialized in Shopify theme development, custom features, advanced cart and checkout logic, performance
+            optimization, and UX improvements. Experienced in Klaviyo email marketing and automation.
+          </p>
+
+          <div class="typing-chip">
+            <span class="typing-chip__label">Currently shipping</span>
+            <span class="typing-text" id="typing-text" aria-live="polite"></span>
+          </div>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--secondary" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat glass-card">
+              <strong>20+</strong>
+              <span>stores delivered</span>
+            </div>
+            <div class="hero__stat glass-card">
+              <strong>8+</strong>
+              <span>end-to-end builds</span>
+            </div>
+            <div class="hero__stat glass-card">
+              <strong>3+</strong>
+              <span>years in Shopify</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__float hero__float--one">Performance-first builds</div>
+
+          <!-- <div class="hero__profile">
+            <div class="hero__image-wrapper">
+              <img src="IMG_2143%20(1).jpg" alt="Samir Chandera - Shopify Developer" class="hero__image">
+            </div>
+          </div> -->
+
+          <article class="hero-card glass-card">
+            <div class="hero-card__header">
+              <span class="status-pill">
+                <span class="status-pill__dot"></span>
+                Available for freelance and team projects
+              </span>
+            </div>
+
+            <div class="hero-card__spotlight">
+              <p class="hero-card__eyebrow">Shopify Stack</p>
+              <h2>Custom storefronts engineered for speed, UX, and growth.</h2>
+              <p>
+                Theme architecture, Shopify 2.0 customization, advanced integrations, and on-brand experiences for B2B,
+                D2C, and hybrid commerce.
+              </p>
+            </div>
+
+            <div class="hero-card__metrics">
+              <div class="metric-tile">
+                <strong>Liquid</strong>
+                <span>Custom sections, schema, dynamic content</span>
+              </div>
+              <div class="metric-tile">
+                <strong>JavaScript</strong>
+                <span>AJAX carts, interactions, and storefront logic</span>
+              </div>
+              <div class="metric-tile">
+                <strong>Integrations</strong>
+                <span>Klaviyo, APIs, webhooks, metafields</span>
+              </div>
+            </div>
+
+            <div class="hero-card__chips">
+              <span>Shopify 2.0</span>
+              <span>Dawn</span>
+              <span>Horizon</span>
+              <span>Checkout UX</span>
+              <span>Store Speed</span>
+              <span>Reusable Sections</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">About</span>
+          <h2>Shopify development focused on performance, clarity, and conversion.</h2>
+          <p>
+            With 3+ years of hands-on Shopify experience, I help brands launch and scale storefronts that feel polished,
+            load fast, and support a better customer journey from landing page to checkout.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card about-card about-card--intro reveal">
+            <h3>What I bring to every project</h3>
+            <p>
+              I work across theme development, performance optimization, UX improvements, marketing integrations, and
+              custom Shopify functionality using Liquid, HTML, CSS, and JavaScript.
+            </p>
+            <div class="tag-list">
+              <span>Liquid</span>
+              <span>Shopify 2.0</span>
+              <span>JavaScript (ES6)</span>
+              <span>Bootstrap</span>
+              <span>Shopify CLI</span>
+              <span>Metafields</span>
+            </div>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5z"></path>
+                <path d="M12 12.5 20 8"></path>
+                <path d="M12 12.5 4 8"></path>
+                <path d="M12 21v-8.5"></path>
+              </svg>
+            </div>
+            <h3>Theme Development</h3>
+            <p>Custom Shopify sections, templates, and storefront components built for maintainability and flexibility.
+            </p>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 6v6l4 2"></path>
+                <path d="M20.75 14A9 9 0 1 1 12 3"></path>
+              </svg>
+            </div>
+            <h3>Performance Optimization</h3>
+            <p>Sharper Lighthouse results, cleaner code paths, and faster storefront interactions that improve user
+              retention.</p>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12h16"></path>
+                <path d="M12 4v16"></path>
+                <path d="m18 6 2-2"></path>
+                <path d="m4 20 2-2"></path>
+              </svg>
+            </div>
+            <h3>UX Improvements</h3>
+            <p>Clearer product discovery, better shopping flows, and interface refinements that reduce friction and
+              drive conversions.</p>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+            </div>
+            <h3>Klaviyo Email Marketing</h3>
+            <p>Automations, integrations, and lifecycle touchpoints that connect storefront actions to smarter email
+              journeys.</p>
+          </article>
+
+          <article class="glass-card feature-card reveal">
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 8h8v8H8z"></path>
+                <path d="M3 10V8a5 5 0 0 1 5-5h2"></path>
+                <path d="M21 14v2a5 5 0 0 1-5 5h-2"></path>
+                <path d="M14 3h2a5 5 0 0 1 5 5v2"></path>
+                <path d="M10 21H8a5 5 0 0 1-5-5v-2"></path>
+              </svg>
+            </div>
+            <h3>APIs, Webhooks, Metafields</h3>
+            <p>Third-party integrations and custom data flows that extend Shopify beyond standard theme customization.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact" id="highlights">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="section-badge">Key Highlights</span>
+          <h2>Measured experience across delivery, speed, and integrations.</h2>
+        </div>
+
+        <div class="stats-grid">
+          <article class="glass-card stat-card reveal">
+            <strong class="counter" data-target="20" data-suffix="+">0</strong>
+            <p>Shopify stores delivered</p>
+          </article>
+          <article class="glass-card stat-card reveal">
+            <strong class="counter" data-target="8" data-suffix="+">0</strong>
+            <p>End-to-end Shopify projects</p>
+          </article>
+          <article class="glass-card stat-card reveal">
+            <strong class="counter" data-target="3" data-suffix="+">0</strong>
+            <p>Years of Shopify development experience</p>
+          </article>
+          <article class="glass-card stat-card reveal">
+            <strong class="counter" data-target="4" data-suffix="">0</strong>
+            <p>Core integration areas: APIs, webhooks, metafields, Klaviyo</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Skills</span>
+          <h2>Technical depth for modern Shopify storefronts.</h2>
+          <p>
+            My workflow blends storefront engineering, performance tuning, and practical integration work so stores are
+            not only beautiful, but also resilient and easy to grow.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="glass-card skill-card reveal">
+            <div class="skill-card__head">
+              <div>
+                <p class="skill-card__label">Technical Skills</p>
+                <h3>Shopify Ecosystem</h3>
+              </div>
+              <span class="skill-chip">Core</span>
+            </div>
+            <div class="skill-meter"><span data-width="95%"></span></div>
+            <div class="tag-list tag-list--compact">
+              <span>Liquid</span>
+              <span>Theme Development</span>
+              <span>Shopify 2.0</span>
+              <span>Dawn</span>
+              <span>Horizon</span>
+            </div>
+          </article>
+
+          <article class="glass-card skill-card reveal">
+            <div class="skill-card__head">
+              <div>
+                <p class="skill-card__label">Technical Skills</p>
+                <h3>Front-End Development</h3>
+              </div>
+              <span class="skill-chip">Strong</span>
+            </div>
+            <div class="skill-meter"><span data-width="92%"></span></div>
+            <div class="tag-list tag-list--compact">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript (ES6)</span>
+              <span>Bootstrap</span>
+            </div>
+          </article>
+
+          <article class="glass-card skill-card reveal">
+            <div class="skill-card__head">
+              <div>
+                <p class="skill-card__label">Technical Skills</p>
+                <h3>Tools & Integrations</h3>
+              </div>
+              <span class="skill-chip">Advanced</span>
+            </div>
+            <div class="skill-meter"><span data-width="90%"></span></div>
+            <div class="tag-list tag-list--compact">
+              <span>Shopify CLI</span>
+              <span>APIs</span>
+              <span>AJAX</span>
+              <span>Webhooks</span>
+              <span>Metafields</span>
+            </div>
+          </article>
+
+          <article class="glass-card skill-card reveal">
+            <div class="skill-card__head">
+              <div>
+                <p class="skill-card__label">Other Skills</p>
+                <h3>Optimization & Tools</h3>
+              </div>
+              <span class="skill-chip">Applied</span>
+            </div>
+            <div class="skill-meter"><span data-width="88%"></span></div>
+            <div class="tag-list tag-list--compact">
+              <span>Performance Opt.</span>
+              <span>Debugging</span>
+              <span>AI Tools</span>
+              <span>Problem Solving</span>
+              <span>Communication</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Experience</span>
+          <h2>Building production Shopify stores with a hands-on delivery mindset.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="glass-card timeline-card reveal">
+            <div class="timeline-card__meta">
+              <span class="timeline-card__company">Elsner Technology</span>
+              <span class="timeline-card__date">March 2023 - Present</span>
+            </div>
+            <h3>Shopify Developer</h3>
+            <ul class="timeline-list">
+              <li>Delivered 20+ Shopify stores across custom theme builds, redesigns, and optimization-focused work.
+              </li>
+              <li>Built responsive storefront experiences using Liquid, HTML, CSS, and JavaScript.</li>
+              <li>Implemented advanced cart and checkout-related logic to support smoother purchase flows.</li>
+              <li>Optimized theme performance to improve loading speed and overall storefront responsiveness.</li>
+              <li>Integrated APIs and third-party tools including Klaviyo for marketing and automation workflows.</li>
+              <li>Collaborated with clients and internal teams to translate business requirements into polished Shopify
+                solutions.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Projects</span>
+          <h2>Selected Shopify work across performance, UX, and custom functionality.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="glass-card project-card reveal">
+            <div class="project-card__top">
+              <p class="project-card__label">Project 01</p>
+              <h3>BioGenesis Natural</h3>
+            </div>
+            <p>Enhanced UX and product discovery, optimized performance and responsiveness, and managed Klaviyo
+              automation.</p>
+            <div class="tag-list tag-list--compact">
+              <span>UX & Discovery</span>
+              <span>Performance</span>
+              <span>Klaviyo</span>
+            </div>
+            <a class="project-link" href="https://www.biogenesisnatural.com/" target="_blank" rel="noreferrer">
+              Visit Website
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-card__top">
+              <p class="project-card__label">Project 02</p>
+              <h3>Willow By The Sea</h3>
+            </div>
+            <p>Customized Shopify theme and built a hybrid B2B and B2C solution with improved UI/UX.</p>
+            <div class="tag-list tag-list--compact">
+              <span>Theme Customs</span>
+              <span>B2B & B2C</span>
+              <span>UI/UX</span>
+            </div>
+            <a class="project-link" href="https://willowbythesea.com/" target="_blank" rel="noreferrer">
+              Visit Website
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-card__top">
+              <p class="project-card__label">Project 03</p>
+              <h3>Proudi</h3>
+            </div>
+            <p>Customized Shopify 2.0 theme, managed Klaviyo campaigns, and improved overall engagement and conversions.
+            </p>
+            <div class="tag-list tag-list--compact">
+              <span>Shopify 2.0</span>
+              <span>Klaviyo</span>
+              <span>Conversions</span>
+            </div>
+            <a class="project-link" href="https://proudi.com/" target="_blank" rel="noreferrer">
+              Visit Website
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-card__top">
+              <p class="project-card__label">Project 04</p>
+              <h3>Smilie</h3>
+            </div>
+            <p>Revamped store design with improved performance, mobile responsiveness, and handled Klaviyo marketing.
+            </p>
+            <div class="tag-list tag-list--compact">
+              <span>Store Design</span>
+              <span>Performance</span>
+              <span>Klaviyo</span>
+            </div>
+            <a class="project-link" href="https://smilie.com.au/" target="_blank" rel="noreferrer">
+              Visit Website
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="glass-card project-card reveal">
+            <div class="project-card__top">
+              <p class="project-card__label">Project 05</p>
+              <h3>EcoModern Essentials</h3>
+            </div>
+            <p>Built B2B and D2C solution, implemented custom pricing logic, and optimized the customer journey.</p>
+            <div class="tag-list tag-list--compact">
+              <span>B2B & D2C</span>
+              <span>Pricing Logic</span>
+              <span>Customer Journey</span>
+            </div>
+            <a class="project-link" href="https://ecomodernessentials.com.au/" target="_blank" rel="noreferrer">
+              Visit Website
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Certifications</span>
+          <h2>Credentials and milestones that reinforce execution.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="glass-card credential-card reveal">
+            <h3>Delivered 20+ Shopify Stores</h3>
+            <p>Hands-on project delivery across redesigns, new builds, optimization work, and custom feature
+              implementation.</p>
+          </article>
+          <article class="glass-card credential-card reveal">
+            <h3>Certified Web Designer</h3>
+            <p>TOPS Technology</p>
+          </article>
+          <article class="glass-card credential-card reveal">
+            <h3>Klaviyo Product Certification</h3>
+            <p>Email marketing automation and lifecycle-focused store engagement expertise.</p>
+          </article>
+          <article class="glass-card credential-card reveal">
+            <h3>Klaviyo Deliverability Certification</h3>
+            <p>Ensure your emails maintain high reputation and hit the inbox.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Education</span>
+          <h2>Academic foundation in commerce and digital business thinking.</h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="glass-card education-card reveal">
+            <span class="education-card__year">2019 - 2022</span>
+            <h3>Bachelor of Commerce (B.Com)</h3>
+            <p>Narsinh Mehta University</p>
+          </article>
+          <article class="glass-card education-card reveal">
+            <span class="education-card__year">Focus</span>
+            <h3>Business + E-commerce Mindset</h3>
+            <p>A commerce background that complements practical Shopify delivery, client communication, and digital
+              growth thinking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Contact</span>
+          <h2>Let’s build a better Shopify experience together.</h2>
+          <p>If you need theme customization, performance work, or a storefront refresh, I’m open to discussing the next
+            project.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-panel reveal">
+            <article class="glass-card contact-card">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M5 4h4l2 5-2.5 1.5A15 15 0 0 0 13.5 15L15 12.5l5 2v4a2 2 0 0 1-2 2C10.82 20.5 3.5 13.18 3.5 4a2 2 0 0 1 2-2Z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <a href="tel:+919408685164">+91 9408685164</a>
+              </div>
+            </article>
+
+            <article class="glass-card contact-card">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16v12H4z"></path>
+                  <path d="m4 7 8 6 8-6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:spchnadera9444@gmail.com">spchnadera9444@gmail.com</a>
+              </div>
+            </article>
+
+            <article class="glass-card social-card">
+              <div class="social-card__head">
+                <h3>Social</h3>
+                <p>Update these links with your live profiles before deploying.</p>
+              </div>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/samir-ahir-92590a264?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer"
+                  aria-label="LinkedIn profile">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.94 8.5v8.56"></path>
+                    <path d="M6.94 5.88a1.44 1.44 0 1 1 0 .02"></path>
+                    <path d="M11.44 17.06V8.5"></path>
+                    <path d="M15.94 17.06V12.2a2.63 2.63 0 0 0-5.26 0"></path>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <!-- <a href="https://github.com/your-username" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 19c-4.5 1.5-4.5-2.5-6-3"></path>
+                    <path
+                      d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-6 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  <span>GitHub</span>
+                </a> -->
+              </div>
+            </article>
+          </div>
+
+          <article class="glass-card contact-form-card reveal">
+            <form id="contact-form" novalidate>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name">
+                <small class="error-message"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="your@email.com">
+                <small class="error-message"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"
+                  placeholder="Tell me about your Shopify project"></textarea>
+                <small class="error-message"></small>
+              </div>
+
+              <button class="btn btn--primary btn--full" type="submit">Send Message</button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; <span id="year"></span> Samir Chandera.</p>
+      <!-- <a href="#hero">Back to top</a> -->
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" type="button" aria-label="Scroll back to top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
