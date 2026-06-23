@@ -238,6 +238,16 @@ function handleFormSubmit(event) {
   contactForm.reset();
 }
 
+function smoothScrollTo(targetId) {
+  const target = document.querySelector(targetId);
+  if (!target) return;
+
+  const headerHeight = header ? header.offsetHeight : 0;
+  const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 12;
+
+  window.scrollTo({ top: targetTop, behavior: "smooth" });
+}
+
 function initializeEvents() {
   themeToggle?.addEventListener("click", () => {
     const nextTheme = body.dataset.theme === "dark" ? "light" : "dark";
@@ -247,8 +257,23 @@ function initializeEvents() {
   navToggle?.addEventListener("click", toggleMenu);
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (event) => {
       closeMenu();
+      const href = link.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        event.preventDefault();
+        smoothScrollTo(href);
+      }
+    });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    if (anchor.closest(".site-nav")) return;
+    anchor.addEventListener("click", (event) => {
+      const href = anchor.getAttribute("href");
+      if (!href || href === "#") return;
+      event.preventDefault();
+      smoothScrollTo(href);
     });
   });
 
