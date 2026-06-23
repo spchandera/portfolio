@@ -38,6 +38,98 @@ body[data-theme="light"] {
   --shadow: 0 24px 60px rgba(73, 92, 141, 0.12);
 }
 
+/* ── Light mode overrides ────────────────────────────── */
+
+body[data-theme="light"] .section-badge {
+  border-color: rgba(95, 132, 255, 0.2);
+  background: rgba(95, 132, 255, 0.06);
+  color: var(--text-soft);
+}
+
+body[data-theme="light"] .hero-card__chips span,
+body[data-theme="light"] .tag-list span,
+body[data-theme="light"] .skill-chip {
+  background: rgba(95, 132, 255, 0.07);
+  border-color: rgba(95, 132, 255, 0.16);
+  color: var(--text-muted);
+}
+
+body[data-theme="light"] .typing-chip {
+  background: rgba(95, 132, 255, 0.05);
+  border-color: rgba(119, 136, 182, 0.22);
+}
+
+body[data-theme="light"] .hero__float {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(119, 136, 182, 0.28);
+  color: var(--text-muted);
+}
+
+body[data-theme="light"] .metric-tile {
+  background: rgba(95, 132, 255, 0.05);
+  border-color: rgba(119, 136, 182, 0.2);
+}
+
+body[data-theme="light"] .icon-box {
+  background: linear-gradient(135deg, rgba(53, 140, 221, 0.12), rgba(95, 132, 255, 0.12));
+  border-color: rgba(95, 132, 255, 0.2);
+}
+
+body[data-theme="light"] .icon-box i {
+  color: #358cdd;
+}
+
+body[data-theme="light"] .icon-box svg {
+  stroke: #358cdd;
+}
+
+body[data-theme="light"] .skill-meter {
+  background: rgba(119, 136, 182, 0.15);
+}
+
+body[data-theme="light"] .site-nav a:hover,
+body[data-theme="light"] .site-nav a.is-active {
+  background: rgba(95, 132, 255, 0.07);
+  color: var(--text);
+}
+
+body[data-theme="light"] .education-card__year {
+  background: rgba(95, 132, 255, 0.07);
+  border-color: rgba(95, 132, 255, 0.16);
+  color: var(--text-soft);
+}
+
+body[data-theme="light"] .social-links a {
+  border-color: rgba(119, 136, 182, 0.25);
+  background: rgba(95, 132, 255, 0.05);
+  color: var(--text);
+}
+
+body[data-theme="light"] .social-links i {
+  color: #358cdd;
+}
+
+body[data-theme="light"] .social-links svg {
+  stroke: #358cdd;
+}
+
+body[data-theme="light"] .form-field input,
+body[data-theme="light"] .form-field textarea {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(119, 136, 182, 0.3);
+}
+
+body[data-theme="light"] .timeline::before {
+  background: linear-gradient(180deg, rgba(53, 140, 221, 0.7), rgba(95, 132, 255, 0.15));
+}
+
+body[data-theme="light"] .page-bg__grid {
+  background-image:
+    linear-gradient(rgba(95, 132, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(95, 132, 255, 0.06) 1px, transparent 1px);
+  opacity: 0.4;
+}
+
 *,
 *::before,
 *::after {
