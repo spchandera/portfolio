@@ -604,6 +604,10 @@ body[data-theme="light"] .site-nav {
   width: 100%;
 }
 
+#contact-form .btn--full {
+  margin-top: 0.25rem;
+}
+
 .hero__stats {
   display: grid;
   gap: 0.9rem;
@@ -898,21 +902,28 @@ body[data-theme="light"] .status-pill {
 }
 
 .icon-box {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.85rem;
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
   background: linear-gradient(135deg, rgba(89, 176, 255, 0.2), rgba(139, 93, 255, 0.2));
   border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.icon-box i {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1;
 }
 
 .icon-box svg {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1rem;
+  height: 1rem;
   fill: none;
-  stroke: currentColor;
+  stroke: #fff;
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -1116,9 +1127,27 @@ body[data-theme="light"] .status-pill {
 }
 
 .contact-card,
-.social-card,
-.contact-form-card {
+.social-card {
   padding: 1.25rem;
+}
+
+.contact-form-card {
+  padding: 2rem;
+}
+
+.contact-form-card__head {
+  margin-bottom: 1.75rem;
+}
+
+.contact-form-card__head h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.25rem;
+}
+
+.contact-form-card__head p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
 }
 
 .contact-card {
@@ -1127,6 +1156,10 @@ body[data-theme="light"] .status-pill {
   gap: 1rem;
   align-items: center;
   min-width: 0;
+}
+
+.contact-card .icon-box {
+  margin-bottom: 0;
 }
 
 .contact-card > div {
@@ -1174,13 +1207,29 @@ body[data-theme="light"] .status-pill {
 }
 
 .social-links svg {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1rem;
+  height: 1rem;
   fill: none;
-  stroke: currentColor;
+  stroke: #fff;
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.social-links i {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1;
+}
+
+#contact-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
 }
 
 .form-field {
@@ -1188,12 +1237,9 @@ body[data-theme="light"] .status-pill {
   gap: 0.45rem;
 }
 
-.form-field+.form-field {
-  margin-top: 1rem;
-}
-
 .form-field label {
   font-weight: 500;
+  font-size: 0.9rem;
   color: var(--text);
 }
 
@@ -1201,13 +1247,17 @@ body[data-theme="light"] .status-pill {
 .form-field textarea {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
   outline: none;
   transition: border-color var(--transition), box-shadow var(--transition), background-color var(--transition);
   resize: vertical;
+}
+
+.form-field textarea {
+  min-height: 130px;
 }
 
 body[data-theme="light"] .form-field input,
@@ -1366,6 +1416,10 @@ body[data-theme="light"] .form-field textarea {
   .contact-grid {
     grid-template-columns: 0.9fr 1.1fr;
   }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 860px) {
@@ -1453,6 +1507,23 @@ body[data-theme="light"] .form-field textarea {
 
   .btn {
     min-height: 3.8rem;
+  }
+
+  .icon-box {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.7rem;
+  }
+
+  .icon-box i,
+  .social-links i {
+    font-size: 0.875rem;
+  }
+
+  .icon-box svg,
+  .social-links svg {
+    width: 0.875rem;
+    height: 0.875rem;
   }
 }
 
