@@ -233,7 +233,7 @@ function handleFormSubmit(event) {
     return;
   }
 
-  formStatus.textContent = "Thanks! Your message is ready. Connect this form to EmailJS, Formspree, or your preferred backend to receive submissions.";
+  formStatus.textContent = "Thanks for reaching out — I'll get back to you shortly.";
   formStatus.classList.add("is-success");
   contactForm.reset();
 }
